@@ -4,12 +4,12 @@
 
 ***What does the script do?***
 
-This script exports the Event Logs for a specific network in order to store them on-premise. 
+This script exports the Event Logs for a specific network and stores them on-premise.
 This might be useful when there is a requirement to store the logs for a long period of time. 
 
 ***How does the script do it?***
 
-The script creates a folder structure corresponding to the product types on the network.
+The script creates a folder structure which is corresponding to the product types on the network.
 Then, the script imports the event logs into respective folders.
 
 ![Automation](automation.png)
@@ -44,7 +44,7 @@ Script input:
 1. parent_directory = Directory where you are going to store the logs,
 2. organisation_id = Your Organisation ID
 3. network_id = Your Network ID
-4. starting_date = Please, stick to the format similar to the dafault
+4. starting_date = Please, stick to the format similar to the default
 5. api_key_file = Create api_key.txt file and store your API key there, specify the full path to this file
 
 Organisation and Network ID can be found by using the following URLs:
@@ -61,6 +61,6 @@ python3 event_log.py
 
 Important note:
 - Supported on Linux/Unix systems,
-- The script is using file names to determine the lates imported timestamp, please do not modify/move files insde the folders.
+- The script is using file names to determine the latest imported timestamp, please do not modify/move files inside the folders.
 
 
